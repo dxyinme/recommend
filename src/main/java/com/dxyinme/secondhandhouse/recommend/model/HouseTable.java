@@ -106,4 +106,17 @@ public class HouseTable {
     public void setOwnerid(Integer ownerid) {
         this.ownerid = ownerid;
     }
+
+    @Override
+    public int hashCode(){
+        return houseId.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HouseTable that = (HouseTable) o;
+        return houseId.equals(that.houseId);
+    }
 }
