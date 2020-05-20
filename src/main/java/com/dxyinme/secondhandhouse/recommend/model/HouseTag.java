@@ -11,6 +11,11 @@ public class HouseTag {
     */
     private String tag;
 
+    public HouseTag(String houseId, String tag) {
+        this.houseId = houseId;
+        this.tag = tag;
+    }
+
     public String getHouseId() {
         return houseId;
     }
